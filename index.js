@@ -11,6 +11,14 @@ app.get('/', function(req, res) {
   res.render('index', { title: 'Responsible Frontend' });
 });
 
+app.get('/base', function(req, res) {
+  res.render('base');
+});
+
+app.get('/form', function(req, res) {
+  res.render('form');
+});
+
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
