@@ -1,0 +1,19 @@
+{
+  "name": "responsible-frontend",
+  "version": "0.0.1",
+  "description": "A guide to building responsible frontend development",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aduggin/responsible-frontend"
+  }
+}

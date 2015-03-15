@@ -1,0 +1,7 @@
+{
+  "name": "Responsible Frontend",
+  "description": "A guide to building responsible frontend development",
+  "repository": "https://github.com/heroku/responsible-frontend",
+  "logo": "http://responsible-frontend.herokuapp.com/node.svg",
+  "keywords": ["node", "express"]
+}
