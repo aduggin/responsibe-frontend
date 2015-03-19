@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "smoketests": "dalek test/smoketests.js"
+    "smoketests": "dalek test/smoketests.js",
+    "sass": "node-sass sass/main.scss public/stylesheets/style.css",
+    "env": "env"
   },
   "dependencies": {
     "express": "~4.9.x",
@@ -19,6 +21,7 @@
     "url": "https://github.com/aduggin/responsible-frontend"
   },
   "devDependencies": {
-    "dalekjs": "0.0.9"
+    "dalekjs": "0.0.9",
+    "node-sass": "^3.0.0-alpha.0"
   }
 }
