@@ -4,7 +4,8 @@
   "description": "A guide to building responsible frontend development",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "smoketests": "dalek test/smoketests.js"
   },
   "dependencies": {
     "express": "~4.9.x",
@@ -16,5 +17,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/aduggin/responsible-frontend"
+  },
+  "devDependencies": {
+    "dalekjs": "0.0.9"
   }
 }
