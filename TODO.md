@@ -1,23 +1,26 @@
 TASKS
-- watch sass files
-- set up scss-lint
+- set up travis - deploy to heroku on success
+
 - set up autoprefixer
-- set up csslint
+- minify css files
 - watch sass files
+- set up csslint
+
 - setup nodemon: https://github.com/remy/nodemon
-- set up a html validor
+- set up an html validator
     - https://www.npmjs.com/package/html-validator ?
     - https://www.npmjs.com/package/w3c-validate
+- set up html inspector
+    https://github.com/philipwalton/html-inspector
 - set up tenon
-
-- set up travis - deploy to heroku on success
-    - can dalekjs be run on travis
+- can dalekjs be run on travis
 
 - add google analytics
 - add scroll tracking
 
 - set up a performance tools
     - https://github.com/marcelduran/webpagetest-api
+        https://github.com/marcelduran/webpagetest-api/wiki/Test-Specs
 
 - add examples to form page
     - basic
@@ -26,8 +29,6 @@ TASKS
 - style typography
 - set up a grid with an old IE fallback
 
-
-
 ARTICLES
 - Good CSS and how to enforce it
 
@@ -35,3 +36,4 @@ ARTICLES
 DONE
 - set up sass
 - set up sass folder structure
+- set up scss-lint
