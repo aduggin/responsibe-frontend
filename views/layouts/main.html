@@ -5,10 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-{{> masthead}}
+    <div class="l-container">
+        {{> components/masthead}}
 
-{{{body}}}
+        {{{body}}}
 
-{{> footer}}
+        {{> components/footer}}
+    </div>
 </body>
 </html>

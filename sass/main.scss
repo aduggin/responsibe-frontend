@@ -1,29 +1,11 @@
-$color-grey: '#ddd';
+@import 'lib/_variables.scss';
 
-body {
-  padding: 0 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: $color-grey;
-}
+@import 'base/_typography.scss';
 
-a {
-  color: #00B7FF;
-}
+@import 'helpers/_visually_hidden.scss';
 
-.masthead {
-  padding: 10px;
-  background: #ddd;
-}
+@import 'layout/_common_page_structure.scss';
 
-.footer {
-  padding: 10px;
-  background: #ddd;
-  min-height: 200px;
-  margin-top: 20px;
-}
-
-.panel {
-  padding: 10px;
-  background: #fcfcfc;
-  border: 1px solid #ddd;
-}
+@import 'components/_footer.scss';
+@import 'components/_masthead.scss';
+@import 'components/_panel.scss';
