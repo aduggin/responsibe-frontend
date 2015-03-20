@@ -1,10 +1,9 @@
 TASKS
 - set up travis - deploy to heroku on success
-
 - set up autoprefixer
 - minify css files
 - watch sass files
-- set up csslint
+
 
 - setup nodemon: https://github.com/remy/nodemon
 - set up an html validator
@@ -17,6 +16,8 @@ TASKS
 
 - add google analytics
 - add scroll tracking
+
+- cache static content
 
 - set up a performance tools
     - https://github.com/marcelduran/webpagetest-api
@@ -37,3 +38,4 @@ DONE
 - set up sass
 - set up sass folder structure
 - set up scss-lint
+- set up csslint

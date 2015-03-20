@@ -4,17 +4,17 @@
   "description": "A guide to building responsible frontend development",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "smoketests": "dalek test/smoketests.js",
-    "scss-lint": "scss-lint",
+    "build:css": "npm run scss-lint && npm run sass && npm run css-lint",
+    "css-lint": "csslint public/stylesheets/style.css",
+    "env": "env",
     "sass": "node-sass sass/main.scss public/stylesheets/style.css",
-    "build:css": "npm run scss-lint && npm run sass",
-    "env": "env"
+    "scss-lint": "scss-lint",
+    "smoketests": "dalek test/smoketests.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "~4.9.x",
-    "express-handlebars": "^1.2.2",
-    "scsslint": "0.0.3"
+    "express-handlebars": "^1.2.2"
   },
   "engines": {
     "node": "0.10.x"
@@ -24,7 +24,9 @@
     "url": "https://github.com/aduggin/responsible-frontend"
   },
   "devDependencies": {
+    "csslint": "^0.10.0",
     "dalekjs": "0.0.9",
-    "node-sass": "^3.0.0-alpha.0"
+    "node-sass": "^3.0.0-alpha.0",
+    "scsslint": "0.0.3"
   }
 }
