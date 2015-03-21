@@ -1,7 +1,9 @@
 TASKS
 
+- set up live reload
 - watch sass files
-- setup nodemon: https://github.com/remy/nodemon
+
+
 
 - set up an html validator
     - https://www.npmjs.com/package/html-validator ?
@@ -10,6 +12,7 @@ TASKS
     https://github.com/philipwalton/html-inspector
 - set up tenon
 - can dalekjs be run on travis
+- set up a staging server?
 
 - cache static content
 
@@ -40,3 +43,4 @@ DONE
 - START WORKING IN FEATURE BRANCHES
 - set up autoprefixer
 - minify css files
+- setup nodemon: https://github.com/remy/nodemon
