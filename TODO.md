@@ -1,7 +1,5 @@
 TASKS
 
-- minify css files
-
 - watch sass files
 - setup nodemon: https://github.com/remy/nodemon
 
@@ -41,3 +39,4 @@ DONE
 - run sass and scsslint on travis
 - START WORKING IN FEATURE BRANCHES
 - set up autoprefixer
+- minify css files
