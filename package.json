@@ -4,9 +4,10 @@
   "description": "A guide to building responsible frontend development",
   "main": "index.js",
   "scripts": {
-    "build:css": "npm run scss-lint && npm run sass && npm run css-lint",
+    "build:css": "npm run scss-lint && npm run sass && npm run postcss && npm run css-lint",
     "css-lint": "csslint public/stylesheets/style.css",
     "env": "env",
+    "postcss": "postcss --use autoprefixer -o public/stylesheets/style.css public/stylesheets/style.css",
     "sass": "node-sass sass/main.scss public/stylesheets/style.css",
     "scss-lint": "scss-lint",
     "smoketests": "dalek test/smoketests.js",
@@ -26,9 +27,11 @@
     "url": "https://github.com/aduggin/responsible-frontend"
   },
   "devDependencies": {
+    "autoprefixer": "^5.1.0",
     "csslint": "^0.10.0",
     "dalekjs": "0.0.9",
     "node-sass": "^3.0.0-alpha.0",
+    "postcss-cli": "^0.3.0",
     "scsslint": "0.0.3"
   }
 }

@@ -1,5 +1,5 @@
 TASKS
-- set up autoprefixer
+
 - minify css files
 
 - watch sass files
@@ -13,15 +13,14 @@ TASKS
 - set up tenon
 - can dalekjs be run on travis
 
-- add google analytics
-- add scroll tracking
-
 - cache static content
 
 - set up a performance tools
     - https://github.com/marcelduran/webpagetest-api
         https://github.com/marcelduran/webpagetest-api/wiki/Test-Specs
 
+- add google analytics
+- add scroll tracking
 - add examples to form page
     - basic
     - enhanced
@@ -40,3 +39,5 @@ DONE
 - set up csslint
 - set up travis - deploy to heroku on success
 - run sass and scsslint on travis
+- START WORKING IN FEATURE BRANCHES
+- set up autoprefixer
