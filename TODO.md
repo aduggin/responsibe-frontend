@@ -1,9 +1,5 @@
 TASKS
-
 - set up live reload
-- watch sass files
-
-
 
 - set up an html validator
     - https://www.npmjs.com/package/html-validator ?
@@ -44,3 +40,4 @@ DONE
 - set up autoprefixer
 - minify css files
 - setup nodemon: https://github.com/remy/nodemon
+- watch sass files
