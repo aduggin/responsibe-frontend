@@ -10,7 +10,9 @@
     "sass": "node-sass sass/main.scss public/stylesheets/style.css",
     "scss-lint": "scss-lint",
     "smoketests": "dalek test/smoketests.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "npm run test:css",
+    "test:css": "npm run scss-lint && npm run css-lint"
   },
   "dependencies": {
     "express": "~4.9.x",

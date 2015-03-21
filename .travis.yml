@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- gem install scss-lint
+deploy:
+  app: responsible-frontend
+  provider: heroku
+  api_key:
+    secure: E5mG8tXP12zgzcOgzpGNMhgXjh2vWuKHl07ydjUiZgenon3FZt4xKxRkoQPTKjcyhBlss2JUWgLAZQtGoF84qyAL7az6n9OsNjd7vSiRU0/7WHbQwFci3PjOeka39A1xgKsIVK/dhuRmAzhRQuX2vdL7xPXARoDugbmVS4J2Ob0=
