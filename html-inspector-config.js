@@ -8,5 +8,5 @@ function onComplete(reports) {
 HTMLInspector.inspect({
   excludeRules: ["unused-classes"],
   excludeElements: ["svg", "iframe"]
-  //, onComplete: onComplete
+  , onComplete: onComplete
 });
