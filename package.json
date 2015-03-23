@@ -11,12 +11,15 @@
     "css:minify": "csswring --preserve-hacks public/stylesheets/style.css public/stylesheets/style.min.css",
     "css:lint": "csslint public/stylesheets/",
     "env": "env",
+    "html:lint": "htmlinspector test/html/index.html && htmlinspector test/html/base.html && htmlinspector test/html/form.html",
+    "html:save": "curl http://localhost:5000/ > test/html/index.html && curl http://localhost:5000/base > test/html/base.html && curl http://localhost:5000/form > test/html/form.html",
     "scss-lint": "scss-lint",
     "smoketests": "dalek test/smoketests.js",
     "start": "node index.js",
     "start:dev": "nodemon --debug index.js",
-    "test": "npm run test:css",
-    "test:css": "npm run scss-lint && npm run css-lint"
+    "test": "npm run html:lint && npm run test:css",
+    "test:css": "npm run scss-lint && npm run css:lint",
+    "test:html": "npm run html:save && npm run html:lint"
   },
   "dependencies": {
     "express": "~4.9.x",
@@ -38,6 +41,7 @@
     "scsslint": "0.0.3",
     "csswring": "^3.0.2",
     "nodemon": "^1.3.7",
-    "watch": "^0.14.0"
+    "watch": "^0.14.0",
+    "html-inspector": "^0.8.2"
   }
 }

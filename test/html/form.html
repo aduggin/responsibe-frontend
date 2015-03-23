@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.min.css' />
+</head>
+<body>
+    <div class="l-container">
+        <div class="masthead">
+            <a href="/">Home</a>
+        </div>
+        <h1>Forms</h1>
+
+<p class="lede">An example of an accessible form</p>
+
+<form class="form">
+    <h2>About you</h2>
+
+    <p>* required field</p>
+    <p>
+        <label for="first-name">First name</label>
+        <input id="first-name" type="text" />
+    </p>
+    <p>
+        <label for="email">Email address *
+            <span class="u-visuallyHidden">required</span>
+        </label>
+        <input id="email" type="email" />
+    </p>
+    <p>
+        <label for="password">Password *
+            <span class="u-visuallyHidden">required</span>
+        </label>
+        <input id="password" type="password" required="required"
+               aria-required="true" aria-describedby="first-name-hint"/>
+        <span class="form-hint" id="first-name-hint">At least 8 characters</span>
+    </p>
+
+    <fieldset>
+        <legend aria-describedby="dob-hint">Date of birth</legend>
+        <p>
+            <label for="day" class="u-visuallyhidden">Day</label>
+            <select id="day" type="text">
+                <option value="Day">Day</option>
+                <!-- Other options go here -->
+            </select>
+        </p>
+        <p>
+            <label for="month" class="u-visuallyhidden">Month</label>
+            <select id="month" type="text">
+                <option value="Month">Month</option>
+                <!-- Other options go here -->
+            </select>
+        </p>
+        <p>
+            <label for="year" class="u-visuallyhidden">Year</label>
+            <select id="year" type="text">
+                <option value="Year">Year</option>
+                <!-- Other options go here -->
+            </select>
+        </p>
+        <p id="dob-hint">So we can provide you with age-related advice</p>
+    </fieldset>
+    <p>
+        <input id="newsletter" type="checkbox" name="newsletter" value="1">
+        <label for="newsletter">I wish to subscribe to the free newsletter</label>
+    </p>
+
+    <input class="button" type="submit" value="Submit">
+
+</form>
+
+        <div class="footer">
+            Footer
+        </div>    </div>
+<foo>bar</foo>
+</body>
+</html>
