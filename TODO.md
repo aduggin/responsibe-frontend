@@ -1,9 +1,5 @@
 TASKS
-- set up autoprefixer
-- minify css files
-
-- watch sass files
-- setup nodemon: https://github.com/remy/nodemon
+- set up live reload
 
 - set up an html validator
     - https://www.npmjs.com/package/html-validator ?
@@ -12,9 +8,7 @@ TASKS
     https://github.com/philipwalton/html-inspector
 - set up tenon
 - can dalekjs be run on travis
-
-- add google analytics
-- add scroll tracking
+- set up a staging server?
 
 - cache static content
 
@@ -22,6 +16,8 @@ TASKS
     - https://github.com/marcelduran/webpagetest-api
         https://github.com/marcelduran/webpagetest-api/wiki/Test-Specs
 
+- add google analytics
+- add scroll tracking
 - add examples to form page
     - basic
     - enhanced
@@ -40,3 +36,8 @@ DONE
 - set up csslint
 - set up travis - deploy to heroku on success
 - run sass and scsslint on travis
+- START WORKING IN FEATURE BRANCHES
+- set up autoprefixer
+- minify css files
+- setup nodemon: https://github.com/remy/nodemon
+- watch sass files
