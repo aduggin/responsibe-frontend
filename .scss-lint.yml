@@ -78,7 +78,6 @@ linters:
 
   NameFormat:
     enabled: true
-    convention: BEM
 
   NestingDepth:
     enabled: true
@@ -106,7 +105,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: BEM
+    convention: hyphenated_BEM
 
   Shorthand:
     enabled: true
