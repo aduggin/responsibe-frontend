@@ -1,29 +1,29 @@
-<h1>Base styles</h1>
+<h1>{{ title }}</h1>
 
 <p class="lede">Basic markup and typographic styles</p>
 
 <hr>
 
-<h2>Sections <a href="#">Linked</a></h2>
+<h2>Sections <a href="#empty">Linked</a></h2>
 <p>The main page header of this guide is an <code>h1</code> element. Any header
     elements may include links, as depicted in the example.</p>
 <p>The secondary header above is an <code>h2</code> element, which may be used
     for any form of important page-level header. More than one may be used per
     page. Consider using an <code>h2</code> unless you need a header level of less
     importance, or as a sub-header to an existing <code>h2</code> element.</p>
-<h3>Third-Level Header <a href="#">Linked</a></h3>
+<h3>Third-Level Header <a href="#empty">Linked</a></h3>
 <p>The header above is an <code>h3</code> element, which may be used for any
     form of page-level header which falls below the <code>h2</code> header in a
     document hierarchy.</p>
-<h4>Fourth-Level Header <a href="#">Linked</a></h4>
+<h4>Fourth-Level Header <a href="#empty">Linked</a></h4>
 <p>The header above is an <code>h4</code> element, which may be used for any
     form of page-level header which falls below the <code>h3</code> header in a
     document hierarchy.</p>
-<h5>Fifth-Level Header <a href="#">Linked</a></h5>
+<h5>Fifth-Level Header <a href="#empty">Linked</a></h5>
 <p>The header above is an <code>h5</code> element, which may be used for any
     form of page-level header which falls below the <code>h4</code> header in a
     document hierarchy.</p>
-<h6>Sixth-Level Header <a href="#">Linked</a></h6>
+<h6>Sixth-Level Header <a href="#empty">Linked</a></h6>
 <p>The header above is an <code>h6</code> element, which may be used for any
     form of page-level header which falls below the <code>h5</code> header in a
     document hierarchy.</p>
@@ -70,15 +70,14 @@
     code (with structure indicated according to the conventions of that language)
     or displaying
     <abbr title="American Standard Code for Information Interchange">ASCII</abbr>
-    art. Here’s an example showing the printable characters of <abbr>ASCII</abbr>:
+    art. Here’s an example showing a sample of computer code:
 </p>
 <div class="styleguide-example">
-<pre><samp> ! " # $ % &amp; ' ( ) * + , - . /
-    0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-    @ A B C D E F G H I J K L M N O
-    P Q R S T U V W X Y Z [ \ ] ^ _
-    ` a b c d e f g h i j k l m n o
-    p q r s t u v w x y z { | } ~</samp></pre>
+<pre><code>function Panel(element, canClose, closeHandler) {
+    this.element = element;
+    this.canClose = canClose;
+    this.closeHandler = function () { if (closeHandler) closeHandler() };
+    }</code></pre>
 </div>
 
 <h3>Blockquotes</h3>
@@ -380,8 +379,7 @@
 <h3>Keyboard entry</h3>
 <p>The <code>kbd</code> element is used to denote user input (typically via a
     keyboard, although it may also be used to represent other input methods, such
-    as voice commands). Example:</p><p>
-</p>
+    as voice commands). Example:</p>
 <div class="styleguide-example">
     <p>To take a screenshot on your Mac, press <kbd>⌘ Cmd</kbd> +
         <kbd>⇧ Shift</kbd> + <kbd>3</kbd>.</p>
