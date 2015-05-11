@@ -34,8 +34,14 @@ $ npm install
 To start the application:
 
 ```sh
-$ npm start
+$ grunt
 ```
 
 The application will run on:
 [http://localhost:5000/](http://localhost:5000/)
+
+To run the tests:
+
+```sh
+$ grunt test
+```
