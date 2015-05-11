@@ -12,11 +12,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/base', function(req, res) {
-  res.render('base');
+  res.render('base', { title: 'Base styles' });
 });
 
 app.get('/form', function(req, res) {
-  res.render('form');
+  res.render('form', { title: 'Forms' });
 });
 
 app.listen(app.get('port'), function() {
