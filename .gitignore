@@ -1,1 +1,5 @@
 node_modules
+temp
+public/stylesheets/*.css.map
+.sass-cache
+.env
