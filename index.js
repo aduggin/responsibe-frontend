@@ -15,6 +15,10 @@ app.get('/base', function(req, res) {
   res.render('base', { title: 'Base styles' });
 });
 
+app.get('/components', function(req, res) {
+  res.render('components', { title: 'Components' });
+});
+
 app.get('/form', function(req, res) {
   res.render('form', { title: 'Forms' });
 });

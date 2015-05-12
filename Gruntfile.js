@@ -27,6 +27,12 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['prepare', 'css', 'js', 'concurrent:nodemon-watch']);
   grunt.registerTask('test', ['prepare', 'css', 'js', 'html', 'smoketests', 'accessibility', 'speed']);
 
+  // 'check' = htmlinspector and backstop won't fail build and budget is very slow - so excluded from 'test'
+  grunt.registerTask('check', [
+    'express', 'run:curl', 'run:htmlinspector',
+    'backstop:test',
+    'budget']);
+
   grunt.registerTask('prepare', ['clean']);
   grunt.registerTask('css', ['sass', 'autoprefixer', 'scsslint', 'csslint']);
   grunt.registerTask('js', ['jshint', 'jscs']);
@@ -35,7 +41,10 @@ module.exports = function(grunt) {
   grunt.registerTask('html', ['express', 'run:curl', 'htmllint', 'run:htmlinspector']);
   grunt.registerTask('accessibility', ['express', 'tenon-ngrok']);
   grunt.registerTask('speed', ['express', 'pagespeed-ngrok']);
+
   grunt.registerTask('budget', ['express', 'perfbudget-ngrok']);
+  grunt.registerTask('backstop:reference', ['run:backstop-clean', 'express', 'run:backstop-reference']);
+  grunt.registerTask('backstop:test', ['express', 'run:backstop-test']);
   
   grunt.registerTask('tenon-ngrok', 'Run tenon with ngrok', function() {
     var done = this.async();

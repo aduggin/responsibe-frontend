@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt test",
-    "htmlinspector": "htmlinspector temp/html/index.html && htmlinspector temp/html/base.html && htmlinspector temp/html/form.html"
+    "htmlinspector": "htmlinspector temp/html/index.html && htmlinspector temp/html/base.html && htmlinspector temp/html/form.html",
+    "backstop": "node_modules/BackstopJS/node_modules/.bin/gulp --cwd node_modules/BackstopJS/"
   },
   "dependencies": {
     "express": "~4.9.x",
@@ -19,6 +20,8 @@
     "url": "https://github.com/aduggin/responsible-frontend"
   },
   "devDependencies": {
+    "backstopjs": "garris/BackstopJS",
+    "casperjs": "^1.1.0-beta3",
     "dotenv": "^1.1.0",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^3.0.0",
@@ -42,6 +45,7 @@
     "html-inspector": "^0.8.2",
     "load-grunt-tasks": "^3.1.0",
     "ngrok": "^0.1.99",
+    "phantomjs": "^1.9.16",
     "time-grunt": "^1.0.0"
   }
 }

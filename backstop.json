@@ -1,0 +1,71 @@
+{
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "name": "tablet_v",
+      "width": 568,
+      "height": 1024
+    },
+    {
+      "name": "tablet_h",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "responsible frontend components",
+      "url": "http://localhost:5000/components",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        ".masthead",
+        ".panel",
+        ".footer"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend homepage",
+      "url": "http://localhost:5000/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend base",
+      "url": "http://localhost:5000/base",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend form",
+      "url": "http://localhost:5000/form",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    }
+  ]
+}
