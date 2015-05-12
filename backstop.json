@@ -18,7 +18,7 @@
   ],
   "scenarios": [
     {
-      "label": "responsible-frontend",
+      "label": "responsible frontend components",
       "url": "http://localhost:5000/components",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -26,6 +26,42 @@
         ".masthead",
         ".panel",
         ".footer"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend homepage",
+      "url": "http://localhost:5000/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend base",
+      "url": "http://localhost:5000/base",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "responsible frontend form",
+      "url": "http://localhost:5000/form",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
       ],
       "readyEvent": null,
       "delay": 500,

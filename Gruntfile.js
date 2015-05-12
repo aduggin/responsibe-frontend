@@ -37,8 +37,8 @@ module.exports = function(grunt) {
   grunt.registerTask('speed', ['express', 'pagespeed-ngrok']);
 
   grunt.registerTask('budget', ['express', 'perfbudget-ngrok']);
-  grunt.registerTask('backstop:reference', ['run:backstop-clean', 'run:backstop-reference']);
-  grunt.registerTask('backstop:test', ['run:backstop-test']);
+  grunt.registerTask('backstop:reference', ['run:backstop-clean', 'express', 'run:backstop-reference']);
+  grunt.registerTask('backstop:test', ['express', 'run:backstop-test']);
   
   grunt.registerTask('tenon-ngrok', 'Run tenon with ngrok', function() {
     var done = this.async();
