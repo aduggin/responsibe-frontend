@@ -8,6 +8,20 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt);
 
+  grunt.config.merge({
+    config: {
+      arrays: {
+        paths: ['/', '/base', 'form'],
+        js: ['Gruntfile.js', 'tasks/*.js']
+      },
+      allHtml: 'temp/html/*.html',
+      allSass: 'sass/**/*.scss',
+      cssFile: 'public/stylesheets/style.css',
+      expressFile: 'index.js',
+      url: 'http://responsible-frontend.herokuapp.com/'
+    }
+  });
+
   grunt.task.loadTasks('tasks');
 
   grunt.registerTask('default', ['prepare', 'css', 'js', 'concurrent:nodemon-watch']);
