@@ -25,14 +25,14 @@ module.exports = function(grunt) {
   grunt.task.loadTasks('tasks');
 
   grunt.registerTask('default', ['prepare', 'css', 'js', 'concurrent:nodemon-watch']);
-  grunt.registerTask('test', ['prepare', 'css', 'js', 'validate-html', 'smoketests', 'accessibility', 'speed']);
+  grunt.registerTask('test', ['prepare', 'css', 'js', 'html', 'smoketests', 'accessibility', 'speed']);
 
   grunt.registerTask('prepare', ['clean']);
   grunt.registerTask('css', ['sass', 'autoprefixer', 'scsslint', 'csslint']);
   grunt.registerTask('js', ['jshint', 'jscs']);
   grunt.registerTask('smoketests', ['express', 'dalek']);
 
-  grunt.registerTask('validate-html', ['express', 'run:curl', 'htmllint']);
+  grunt.registerTask('html', ['express', 'run:curl', 'htmllint', 'run:htmlinspector']);
   grunt.registerTask('accessibility', ['express', 'tenon-ngrok']);
   grunt.registerTask('speed', ['express', 'pagespeed-ngrok']);
   grunt.registerTask('budget', ['express', 'perfbudget-ngrok']);

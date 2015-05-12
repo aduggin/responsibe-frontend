@@ -4,7 +4,8 @@
   "description": "A guide to building responsible frontend development",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "htmlinspector": "htmlinspector temp/html/index.html && htmlinspector temp/html/base.html && htmlinspector temp/html/form.html"
   },
   "dependencies": {
     "express": "~4.9.x",
@@ -38,6 +39,7 @@
     "grunt-run": "^0.3.0",
     "grunt-scss-lint": "^0.3.6",
     "grunt-tenon": "^0.0.9",
+    "html-inspector": "^0.8.2",
     "load-grunt-tasks": "^3.1.0",
     "ngrok": "^0.1.99",
     "time-grunt": "^1.0.0"

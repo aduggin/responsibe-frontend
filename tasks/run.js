@@ -5,6 +5,10 @@ module.exports = function(grunt) {
     'run', {
       curl: {
         cmd: './download_html.sh'
+      },
+      htmlinspector: {
+        cmd: 'npm',
+        args: ['run', 'htmlinspector']
       }
     });
 };
