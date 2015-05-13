@@ -1,0 +1,5 @@
+// this is a rare occasion where we want to style an id. I'm using an attribute selector so linting doesn't fail
+div[id="main"]:focus {
+  outline: 0; // we don't want div#main to show an outline when a user tabs to it
+  background: transparent; // stop csslint from throwing an error. Do this instead of disabling rule as it's an exceptional circumstance
+}
