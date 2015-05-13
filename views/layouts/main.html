@@ -5,10 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+    <a id="top"></a>
     <div class="l-container">
         {{> components/masthead}}
 
+        <div id="main" tabindex="-1">
         {{{body}}}
+        </div>
 
         {{> components/footer}}
     </div>

@@ -25,7 +25,7 @@ module.exports = function(grunt) {
   grunt.task.loadTasks('tasks');
 
   grunt.registerTask('default', ['prepare', 'css', 'js', 'concurrent:nodemon-watch']);
-  grunt.registerTask('test', ['prepare', 'css', 'js', 'html', 'smoketests', 'accessibility', 'speed']);
+  grunt.registerTask('test', ['prepare', 'css', 'js', 'html', 'links', 'smoketests', 'accessibility', 'speed']);
 
   // 'check' = htmlinspector and backstop won't fail build and budget is very slow - so excluded from 'test'
   grunt.registerTask('check', [
@@ -39,6 +39,7 @@ module.exports = function(grunt) {
   grunt.registerTask('smoketests', ['express', 'dalek']);
 
   grunt.registerTask('html', ['express', 'run:curl', 'htmllint', 'run:htmlinspector']);
+  grunt.registerTask('links', ['express', 'linkChecker']);
   grunt.registerTask('accessibility', ['express', 'tenon-ngrok']);
   grunt.registerTask('speed', ['express', 'pagespeed-ngrok']);
 
